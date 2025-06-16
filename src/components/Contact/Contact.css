@@ -1,36 +1,64 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/* Mobile-first base styles */
 .contact-grouped {
-    width: 600px;
-    margin: 0 auto;            /* <-- Horizontally centers the div */
-    text-align: center;        /* <-- Centers the text inside */
-    padding: 2rem 1rem;        /* Optional: Adds vertical spacing */
+  width: 100%;
+  max-width: 600px;       /* Prevents it from getting too wide on large screens */
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .contact-title {
-    font-size: 45px;
-    margin-bottom: 1rem;       /* Adds spacing between h2 and h3 */
+  font-size: 2rem;         /* Responsive font size */
+  margin-bottom: 1rem;
 }
 
 .contact-grouped h3 {
-    font-weight: 400;
-    color: rgb(118, 118, 118);    /* Optional styling */
+  font-weight: 400;
+  color: rgb(118, 118, 118);
+  font-size: 1rem;         /* Adjust for smaller screens */
 }
 
 .contact-title-box {
-  font-size: 15px;
+  font-size: 0.9rem;
   display: inline-block;
   background-color: black;
   color: white;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 0.5rem;
   margin-bottom: 8px;
+  text-decoration: none;   /* Optional for button-like behavior */
+  transition: background-color 0.3s ease;
+}
+
+.contact-title-box:hover {
+  background-color: #333;
 }
 
 .link {
-    text-decoration: none;
-    color: rgb(55, 138, 255)
+  text-decoration: none;
+  color: rgb(55, 138, 255);
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 768px) {
+  .contact-grouped {
+    padding: 4rem 2rem;
+  }
+
+  .contact-title {
+    font-size: 45px;
+  }
+
+  .contact-grouped h3 {
+    font-size: 1.2rem;
+  }
+
+  .contact-title-box {
+    font-size: 1rem;
+  }
 }
