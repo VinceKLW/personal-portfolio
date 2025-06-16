@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects.css';
-
+import { useState } from 'react';
 import handArithmetic from '../../assets/handArithmetic.jpeg';
 import github_logo from '../../assets/github.svg';
 import youtube_logo from '../../assets/youtube.png';
@@ -46,15 +46,19 @@ const projectsData = [
 ];
 
 function Project({ image, name, date, desc, website, github, websitelogo }) {
+  const [showDesc, setShowDesc] = useState(false);
+
   return (
-    <div className="project-box">
+    <div className="project-box" onClick={() => setShowDesc(!showDesc)}>
       <img className="project-img" src={image} alt={`${name} screenshot`} />
       <div className="project-text">
         <p className="project-name">{name}</p>
         <p className="project-date">{date}</p>
-        <p className="project-desc">{desc}</p>
 
-        <div className="project-links">
+        {/* Conditionally render description */}
+        {showDesc && <p className="project-desc">{desc}</p>}
+
+        <div className="project-links" onClick={(e) => e.stopPropagation()}>
           {website && (
             <a href={website} target="_blank" rel="noopener noreferrer" aria-label={`${name} Website`}>
               <img className="yt-logo" src={websitelogo} alt="Website Link" />
