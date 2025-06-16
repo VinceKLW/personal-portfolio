@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className='portfolio'>
-        <SideBar/>
+        {/* <SideBar/> */}
         <section id='intro'>
           <Intro/>
         </section>

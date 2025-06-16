@@ -1,21 +1,21 @@
 .sidebar-menu {
-    position: fixed;        
-    left: 18%;               
-    top: 50%;               
-    transform: translateY(-50%); 
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 8px;
-    z-index: 1000; /* make sure it’s on top if you want it overlapping intentionally */
+  position: fixed;
+  left: 18%;               /* or adjust so it’s where you want */
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+/* Hide sidebar on tablets and smaller */
 @media (max-width: 1024px) {
   .sidebar-menu {
-    display: none;
-  }
-
-  .portfolio {
-    margin-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;  /* prevent interaction */
   }
 }
