@@ -46,6 +46,12 @@ body {
   font-size: 1.1rem; /* Slightly larger for readability */
 }
 
+.project-readmore {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
 .projects-grid {
   display: flex;
   flex-wrap: wrap;

@@ -11,10 +11,10 @@ import trashtech from '../../assets/trashtech.jpg';
 const projectsData = [
   {
     image: nexus,
-    name: 'Nexus AI',
+    name: 'Nexus AI 🏆',
     date: '2025',
     desc: 'We envisioned a centralized, AI-powered productivity hub to simplify note-taking, document management, and task tracking while integrating smart assistance. Inspired by tools like Microsoft Copilot, Apple Notes, and chat-based AI systems, Nexus AI combines these features into a single, easy-to-access Electron.js desktop application, streamlining workflows for users.',
-    website: 'https://www.youtube.com/watch?v=CGtVsQfq9-U',
+    website: 'https://www.youtube.com/watch?v=3SEqVufuHK0&embeds_referring_euri=https%3A%2F%2Fdevpost.com%2F',
     github: 'https://devpost.com/software/nexus-ai-g2eq10',
     websitelogo: youtube_logo,
   },
@@ -38,7 +38,7 @@ const projectsData = [
   },
   {
     image: trashtech,
-    name: 'Trash Tech',
+    name: 'Trash Tech 🏆',
     date: '2023',
     desc: 'Trash It utilizes advanced computer vision technology to identify and categorize waste through user-uploaded photos. It offers personalized recycling suggestions, educational tips, and real-time tracking, turning recycling into an effortless and rewarding experience.',
     github: 'https://devpost.com/software/hackhive-2024',
@@ -84,7 +84,8 @@ function Projects() {
         <h3>
           These are some projects I've developed over the years, from
           <br />
-          personal explorations to hackathon winning projects!
+          personal explorations to hackathon winning projects!  
+          <h4 className='project-readmore'>(click box to read more)</h4>        
         </h3>
       </div>
 
