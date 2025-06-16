@@ -1,0 +1,12 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.portfolio {
+  margin: 2rem; /* adds margin around entire app */
+  max-width: 800px; /* optional: constrain max width */
+  margin-left: auto;
+  margin-right: auto; /* center horizontally */
+  box-sizing: border-box;
+  padding: 1rem; /* optional: internal spacing */
+}

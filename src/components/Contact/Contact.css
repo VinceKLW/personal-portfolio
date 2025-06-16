@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-grouped {
+    width: 100%;
+    max-width: 600px;            /* max width to keep it from stretching too wide */
+    margin: 0 auto;              /* centers horizontally */
+    text-align: center;          /* center all text inside */
+    padding: 2rem 1rem;          /* vertical + horizontal padding */
+}
+
+.contact-title {
+    font-size: 45px;
+    margin-bottom: 1rem;
+}
+
+.contact-grouped h3 {
+    font-weight: 400;
+    color: rgb(118, 118, 118);
+}
+
+.contact-title-box {
+    font-size: 15px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+    margin-bottom: 8px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(55, 138, 255);
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    .contact-grouped {
+        padding: 1.5rem 0.8rem;
+    }
+    .contact-title {
+        font-size: 32px;
+    }
+    .contact-grouped h3 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .contact-title-box {
+        font-size: 13px;
+        padding: 0.25rem 0.5rem;
+    }
+}

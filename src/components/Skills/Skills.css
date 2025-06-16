@@ -1,0 +1,29 @@
+p {
+    margin: 0;
+}
+
+.skills-title {
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skill-box {
+    font-size: 12px;
+    display: inline-block;   /* <-- Makes the box size depend on the content */
+    background-color: black;
+    color: white;
+    padding: 0.3rem 0.7rem;  /* <-- Space around the text */
+    border-radius: 0.5rem;   /* optional: rounded corners */
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.skill-box:hover {
+    background-color: rgb(84, 83, 83);
+    transition: all 0.3 ease;
+}
+
+.skills-grouped {
+    margin-bottom: 30px;
+}
