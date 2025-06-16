@@ -1,0 +1,21 @@
+.sidebar-menu {
+    position: fixed;        
+    left: 18%;               
+    top: 50%;               
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 8px;
+    z-index: 1000; /* make sure it’s on top if you want it overlapping intentionally */
+}
+
+@media (max-width: 1024px) {
+  .sidebar-menu {
+    display: none;
+  }
+
+  .portfolio {
+    margin-left: 0;
+  }
+}

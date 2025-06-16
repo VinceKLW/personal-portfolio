@@ -80,11 +80,9 @@ function Projects() {
     <div className="projects-container">
       <div className="project-grouped">
         <div className="project-title-box">My Projects</div>
-        <h2 className="project-title">Here are my latest projects</h2>
+        <h2 className="project-title">Check these out!</h2>
         <h3>
-          These are some projects I've developed over the years, from
-          <br />
-          personal explorations to hackathon winning projects!  
+          Ranging, from personal explorations to hackathon winning projects!  
           <h4 className='project-readmore'>(click box to read more)</h4>        
         </h3>
       </div>
