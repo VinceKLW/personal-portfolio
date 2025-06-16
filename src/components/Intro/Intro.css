@@ -10,8 +10,9 @@
 .intro-title-box {
   font-size: 0.9rem;
   display: inline-block;
-  border: 2px solid black; /* Use hex for consistency */
-  color: #176ccd;
+  /* border: 2px solid black; Use hex for consistency */
+  background-color: #176ccd;
+  color: white;
   padding: 0.3rem 0.7rem;
   border-radius: 0.5rem;
   margin-bottom: 10px;
@@ -21,7 +22,7 @@
 }
 
 .intro-title-box:hover {
-  background-color: #dddddd;
+  background-color: #7db5f5;
   transition: all 0.3 ease;
 }
 
@@ -56,6 +57,14 @@
   width: 200px;
   height: 200px;
   object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.intro-image:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 /* Responsive tweaks */
