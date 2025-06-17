@@ -19,8 +19,8 @@ function ExperienceBox({ company, role, date, logo }) {
 
 function Experience() {
     const experienceData = [
-        { company: 'Fidelity Investments', role: 'IT Architect - FCC IT Architecture', date: 'July 2025 - Present', logo: fidelitylogo },
-        { company: 'Fidelity Investments', role: 'Data Engineer - FIC ML DevOps', date: 'January 2025 - July 2025', logo: fidelitylogo },
+        { company: 'Fidelity Investments', role: 'IT Architect - FCC IT Architecture', date: 'Jul 2025 - Present', logo: fidelitylogo },
+        { company: 'Fidelity Investments', role: 'Data Engineer - FIC ML DevOps', date: 'Jan 2025 - Jul 2025', logo: fidelitylogo },
     ]
 
     return (
