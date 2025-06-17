@@ -22,7 +22,7 @@ function Education() {
         {
             school: 'Ontario Tech University',
             degree: 'BSc. Computer Science, Data Science Specialization',
-            date: '2023 - 2028',
+            date: 'Sept. 2023 - Apr. 2028',
             logo: ontariotech,
         },
     ];
