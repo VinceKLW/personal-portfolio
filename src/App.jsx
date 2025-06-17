@@ -10,29 +10,34 @@ import Contact from './components/Contact/Contact'
 import Projects from './components/Projects/Projects'
 import SideBar from './components/SideBar/SideBar'
 
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0, y: -30 },  // start slightly above
+  visible: {
+    opacity: 1,
+    y: 0,                         // move to natural position
+    transition: { duration: 1, ease: 'easeOut' }
+  }
+};
+
 function App() {
 
   return (
-    <>
-      <div className='portfolio'>
-        {/* <SideBar/> */}
-        <section id='intro'>
-          <Intro/>
-        </section>
+    <motion.div
+      className="portfolio"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+        <Intro/>
         <About/>
-        <section id='experiences'>
         <Experience/>
-        </section>
         <Education/>
         <Skills/>
-        <section id="projects">
         <Projects/>
-        </section>
-        <section id="contact">
         <Contact/>
-        </section>
-      </div>
-    </>
+    </motion.div>
   )
 }
 
