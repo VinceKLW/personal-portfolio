@@ -7,7 +7,7 @@ function Intro() {
   const el = React.useRef(null);
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Aspiring Full-Stack Developer.', 'Aspiring Tech Leader.', 'Aspiring Software Developer.'],
+      strings: ['Aspiring Full-Stack Developer...', 'Aspiring Tech Leader...', 'Aspiring Software Developer...'],
       typeSpeed: 50,
       backSpeed: 50,
       smartBackspace: true,
