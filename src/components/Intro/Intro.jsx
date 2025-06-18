@@ -12,7 +12,7 @@ function Intro() {
       backSpeed: 50,
       smartBackspace: true,
       loop: true,
-      backDelay: 5000
+      backDelay: 3000
     });
 
     return () => {
