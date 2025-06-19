@@ -32,7 +32,7 @@ function Intro() {
         <div className="intro-links">
           <a
             className="intro-title-box"
-            href="../../../public/Vincent_Wong_Resume.pdf"
+            href="/Vincent_Wong_Resume.pdf"
             download
           >
             Resume
