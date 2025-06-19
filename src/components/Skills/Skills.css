@@ -11,7 +11,7 @@ p {
 .skill-box {
     font-size: 12px;
     display: inline-block;   /* <-- Makes the box size depend on the content */
-    background-color: black;
+    background-color: #176ccd;    
     color: white;
     padding: 0.3rem 0.7rem;  /* <-- Space around the text */
     border-radius: 0.5rem;   /* optional: rounded corners */
@@ -20,7 +20,7 @@ p {
 }
 
 .skill-box:hover {
-    background-color: rgb(84, 83, 83);
+    background-color: #7db5f5;
     transition: all 0.3 ease;
 }
 
