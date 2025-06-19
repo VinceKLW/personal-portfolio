@@ -18,7 +18,7 @@ function Intro() {
     return () => {
       typed.destroy();
     };
-  }, []);
+  }, []); 
 
   return (
     <div className="intro-container">
