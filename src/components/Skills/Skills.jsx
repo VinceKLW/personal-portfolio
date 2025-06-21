@@ -17,6 +17,8 @@ function Skills() {
         {skill: "Java"},
         {skill: "C++"},
         {skill: "React"},
+        {skill: "FastAPI"},
+        {skill: "Electron JS"},
         {skill: "MySQL"},
         {skill: "HTML"},
         {skill: "CSS"},
@@ -24,12 +26,15 @@ function Skills() {
         {skill: "Github"},
         {skill: "Photoshop"},
         {skill: "Illustrator"},
+        {skill: "Azure"},
         {skill: "Figma"},
         {skill: "VSCode"},
         {skill: "Vite"},
         {skill: "Snowflake"},
+        {skill: "Tableau Server Client"},
         {skill: "Informatica Cloud"},
-        {skill: "Pinecone DBs"},
+        {skill: "Pinecone DB"},
+        {skill: "Chroma DB"},
     ]
 
   return (
