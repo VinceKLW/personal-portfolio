@@ -22,7 +22,7 @@ Feel free to fork this project as a template!
 
 | Frontend         | Deployment         
 | ---------------- | ------------------
-| React (Vite)     | Vercel or Netlify 
+| React (Vite)     |  Netlify 
 
 ## 🚀 Setup & Development
 
