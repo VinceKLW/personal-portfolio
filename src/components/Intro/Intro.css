@@ -27,6 +27,10 @@
   transition: transform 0.2s ease;
 }
 
+.emoji-button:hover {
+  transform: scale(1.2);
+}
+
 .emoji-button.grow {
   margin-left: 10px;
   transition: transform 0.2s ease;
