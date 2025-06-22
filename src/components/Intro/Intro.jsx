@@ -2,6 +2,8 @@ import React from 'react';
 import './Intro.css';
 import vincentImage from '../../assets/vincent_wong.jpeg';
 import Typed from 'typed.js';
+import { useState } from 'react';
+
 
 function Intro() {
   const el = React.useRef(null);
@@ -20,11 +22,25 @@ function Intro() {
     };
   }, []); 
 
+    const [clicked, setClicked] = useState(false);
+
+    const handleClick = () => {
+      const audio = new Audio('/high5.mov');
+      audio.volume = 0.3; // Set volume to 50%
+      audio.play();
+
+      setClicked(true)
+      setTimeout(() => {
+        setClicked(false);
+      }, 500); // Reset after 500 milliseconds
+    }
+
+
   return (
     <div className="intro-container">
       <img className="intro-image" src={vincentImage} alt="headshot" />
       <div className="intro-text">
-        <p className="intro-title">Hi, I'm Vincent 👋</p>
+        <p className="intro-title">Hi, I'm Vincent <button onClick={handleClick} className={clicked ? 'emoji-button grow' : 'emoji-button'}>👋</button></p>
         <p className="intro-body">
           <span ref={el}></span><br />
           <span className="intro-body-sub">I also love the gym 💪</span>
