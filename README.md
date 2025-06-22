@@ -4,6 +4,8 @@ Welcome to my personal portfolio — [vincentwong.xyz](https://vincentwong.xyz) 
 
 This website serves as a central hub for my professional presence, highlighting my technical expertise, experience, and personal projects.
 
+Feel free to fork this project as a template!
+
 ## 🌐 Website
 
 👉 **Live URL**: [https://vincentwong.xyz](https://vincentwong.xyz)
