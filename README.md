@@ -1,13 +1,35 @@
-# React + Vite
+# Vincent Wong Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio — [vincentwong.xyz](https://vincentwong.xyz) — a showcase of my work, skills, and projects in **software development**, **machine learning**, and **data science**.
 
-Currently, two official plugins are available:
+This website serves as a central hub for my professional presence, highlighting my technical expertise, experience, and personal projects.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Feel free to fork this project as a template!
 
-## Expanding the ESLint configuration
+## 🌐 Website
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# personal-portfolio
+👉 **Live URL**: [https://vincentwong.xyz](https://vincentwong.xyz)
+
+## 📁 Features
+
+- 🖥️ **About Me** – Quick introduction and background
+- 🛠️ **Projects** – A curated selection of projects with links to GitHub repositories or live demos
+- 📄 **Resume** – Downloadable PDF version of my latest CV
+- 🏆 **Experience & Education** – Highlights of my work experience, internships, and academic achievements
+- 📫 **Contact** – Ways to connect with me (email, LinkedIn)
+
+## 🛠️ Tech Stack
+
+| Frontend         | Deployment         
+| ---------------- | ------------------
+| React (Vite)     |  Netlify 
+
+## 🚀 Setup & Development
+
+Clone the repository and run locally:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
+npm run dev
