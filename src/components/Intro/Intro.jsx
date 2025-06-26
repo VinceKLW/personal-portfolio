@@ -26,13 +26,13 @@ function Intro() {
 
     const handleClick = () => {
       const audio = new Audio('/high5.mov');
-      audio.volume = 0.3; // Set volume to 50%
+      audio.volume = 0.3;
       audio.play();
 
       setClicked(true)
       setTimeout(() => {
         setClicked(false);
-      }, 500); // Reset after 500 milliseconds
+      }, 500); 
     }
 
 
