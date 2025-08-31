@@ -10,7 +10,7 @@ function Contact() {
             Get in Touch
         </h2>
         <h3>
-            Would you like to get in contact? <a className="link" href='https://www.linkedin.com/in/vincentklw/'>Connect with me on LinkedIn</a> or <a className="link" href='mailto:vincent.wong3@ontariotechu.net'>drop me an email</a>! I'll keep an eye out for you 😼
+            Would you like to get in contact? <a className="link" href='https://www.linkedin.com/in/vincentklw/'>Connect with me on LinkedIn</a> or <a className="link" href='mailto:vinceklwong@gmail.com'>drop me an email</a>! I'll keep an eye out for you 😼
         </h3>
     </div>
   )
