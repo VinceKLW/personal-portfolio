@@ -71,7 +71,7 @@ function Intro() {
           </a>
           <a
             className="intro-title-box"
-            href="mailto:vinceklwong@gmail.com"
+            href="mailto:vinceklwong@gmail.com" 
           >
             vinceklwong@gmail.com  
           </a>
