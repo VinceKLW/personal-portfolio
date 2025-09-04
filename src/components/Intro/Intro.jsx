@@ -70,7 +70,7 @@ function Intro() {
             LinkedIn
           </a>
           <a
-            className="intro-title-box"
+            className="intro-title-box" 
             href="mailto:vinceklwong@gmail.com" 
           >
             vinceklwong@gmail.com  
