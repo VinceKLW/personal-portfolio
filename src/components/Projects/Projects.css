@@ -84,6 +84,14 @@ body {
   border-radius: 8px 8px 0 0;
 }
 
+.volt-logo {
+  max-width: 60% !important;
+  max-height: 150px !important;
+  object-fit: contain;
+  margin: 1rem auto;
+  display: block;
+}
+
 .project-text {
   padding: 1rem;
   text-align: left;

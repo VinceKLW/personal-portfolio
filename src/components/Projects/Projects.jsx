@@ -7,8 +7,27 @@ import youtube_logo from '../../assets/youtube.png';
 import nexus from '../../assets/nexus.png';
 import prepifi from '../../assets/prepifi.png';
 import trashtech from '../../assets/trashtech.jpg';
+import link from '../../assets/link.webp';
+import volt_logo from '../../assets/volt.svg';
+import otuguessr from '../../assets/otuguessr.svg';
 
 const projectsData = [
+  {
+    image: volt_logo,
+    name: 'volt!',
+    date: '2025',
+    desc: 'From students buried in deadlines to teams streamlining onboarding, Volt automates the repetitive and time-consuming tasks that slow you down. Spend less time scrolling through endless documents and more time focusing on what matters most.',
+    website: 'https://v0lt.ca/',
+    websitelogo: link,
+  },
+  {
+    image: otuguessr,
+    name: 'OTUGuessr',
+    date: '2025',
+    desc: 'OTUGuessr is a fun, interactive game where you guess the exact location of photos taken around Ontario Tech University. Compete on the leaderboard, explore hidden corners of campus, and challenge your friends to see who knows OTU best!',
+    website: 'https://otuguessr.com/',
+    websitelogo: link,
+  },
   {
     image: nexus,
     name: 'Nexus AI 🏆',
@@ -50,7 +69,11 @@ function Project({ image, name, date, desc, website, github, websitelogo }) {
 
   return (
     <div className="project-box" onClick={() => setShowDesc(!showDesc)}>
-      <img className="project-img" src={image} alt={`${name} screenshot`} />
+      <img 
+        className={`project-img ${name === 'volt!' ? 'volt-logo' : ''}`} 
+        src={image} 
+        alt={`${name} screenshot`} 
+      />
       <div className="project-text">
         <p className="project-name">{name}</p>
         <p className="project-date">{date}</p>
