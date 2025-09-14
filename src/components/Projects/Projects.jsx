@@ -77,7 +77,7 @@ function Project({ image, name, date, desc, website, github, websitelogo }) {
       <div className="project-text">
         <p className="project-name">{name}</p>
         <p className="project-date">{date}</p>
-
+ 
         {/* Conditionally render description */}
         {showDesc && <p className="project-desc">{desc}</p>}
 
