@@ -9,7 +9,7 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Projects from './components/Projects/Projects'
 import SideBar from './components/SideBar/SideBar'
-
+import { Analytics } from "@vercel/analytics/react"
 import { motion } from 'framer-motion';
 
 const containerVariants = {
@@ -24,6 +24,7 @@ const containerVariants = {
 function App() {
 
   return (
+    <>
     <motion.div
       className="portfolio"
       variants={containerVariants}
@@ -38,6 +39,8 @@ function App() {
         <Projects/>
         <Contact/>
     </motion.div>
+    <Analytics/>
+    </>
   )
 }
 
