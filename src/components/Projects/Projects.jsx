@@ -9,7 +9,7 @@ import prepifi from '../../assets/prepifi.png';
 import trashtech from '../../assets/trashtech.jpg';
 import link from '../../assets/link.webp';
 import volt_logo from '../../assets/volt.svg';
-import otuguessr from '../../assets/otuguessr.svg';
+import otuguessr from '../../assets/OTUGuessr.svg';
 
 const projectsData = [
   {
@@ -23,7 +23,7 @@ const projectsData = [
   {
     image: otuguessr,
     name: 'OTUGuessr',
-    date: '2025',
+    date: '2025', 
     desc: 'OTUGuessr is a fun, interactive game where you guess the exact location of photos taken around Ontario Tech University. Compete on the leaderboard, explore hidden corners of campus, and challenge your friends to see who knows OTU best!',
     website: 'https://otuguessr.com/',
     websitelogo: link,
