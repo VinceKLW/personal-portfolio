@@ -20,7 +20,7 @@ function ExperienceBox({ company, role, date, logo }) {
 
 function Experience() {
     const experienceData = [
-        { company: 'Ontario Tech Racing', role: 'Software Engineer', date: 'Sept. 2025 - Present', logo: oturacing},
+        { company: 'Ontario Tech Racing', role: 'Software Engineer - Software Department', date: 'Sept. 2025 - Present', logo: oturacing},
         { company: 'Fidelity Investments', role: 'IT Architect - FCC IT Architecture', date: 'Jul. 2025 - Present', logo: fidelitylogo },
         { company: 'Fidelity Investments', role: 'ML Engineer - FIC ML DevOps', date: 'Jan. 2025 - Jul. 2025', logo: fidelitylogo },
     ]
