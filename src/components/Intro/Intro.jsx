@@ -48,13 +48,6 @@ function Intro() {
         <div className="intro-links">
           <a
             className="intro-title-box"
-            href="/Vincent_Wong_Resume.pdf"
-            download
-          >
-            Resume
-          </a>
-          <a
-            className="intro-title-box"
             href="https://github.com/VinceKLW"
             target="_blank"
             rel="noopener noreferrer"
