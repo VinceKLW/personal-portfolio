@@ -2,7 +2,7 @@ const experiences = [
   {
     role: 'swe',
     company: 'ontario tech racing',
-    date: '2025 - present',
+    date: 'present',
     logo: '/ontariotechracing.png',
     description: 'web development & internal filing system',
     url: null
@@ -10,7 +10,7 @@ const experiences = [
   {
     role: 'it architect',
     company: 'fidelity investments',
-    date: '2025',
+    date: 'S25',
     logo: '/fidelity.webp',
     description: 'design blueprints & developer portal',
     url: 'https://www.fidelity.ca/en/'
@@ -18,7 +18,7 @@ const experiences = [
   {
     role: 'data engineer',
     company: 'fidelity investments',
-    date: '2025',
+    date: 'W25',
     logo: '/fidelity.webp',
     description: 'developed data pipelines & python scripts',
     url: 'https://www.fidelity.ca/en/'
@@ -32,6 +32,7 @@ function Experience() {
     borderRadius: '3px',
     marginRight: '6px',
     verticalAlign: 'middle',
+    flexShrink: 0,
   }
 
   return (
@@ -40,7 +41,7 @@ function Experience() {
       <ul>
         {experiences.map((exp, index) => (
           <li key={index} onClick={() => exp.url && window.open(exp.url, '_blank')}>
-            <div className="title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.95rem' }}>
+            <div className="title" style={{ fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
               <img src={exp.logo} alt={exp.company} style={logoStyle} />
               <span className="main">
                 {exp.role} <span style={{ color: '#71717a' }}>at</span>{' '}

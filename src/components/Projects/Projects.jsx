@@ -8,7 +8,7 @@ const projects = [
   },
   {
     name: 'volt!',
-    description: 'ai-powered productivity automation tool',
+    description: 'ai-powered file system',
     url: 'https://v0lt.ca',
     hover: 'enable talking to your documents',
     logo: '/volt_logo.jpeg'
@@ -22,6 +22,7 @@ function Projects() {
     borderRadius: '3px',
     marginRight: '6px',
     verticalAlign: 'middle',
+    flexShrink: 0,
   }
 
   return (
@@ -30,7 +31,7 @@ function Projects() {
       <ul>
         {projects.map((project, index) => (
           <li key={index} onClick={() => window.open(project.url, '_blank')}>
-            <div className="title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.95rem' }}>
+            <div className="title" style={{ fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
               {project.logo && <img src={project.logo} alt={project.name} style={logoStyle} />}
               <span className="main">
                 <span style={{ fontWeight: 400, color: '#fafafa' }}>{project.name}</span>

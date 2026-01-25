@@ -5,6 +5,7 @@ function Header() {
     borderRadius: '3px',
     verticalAlign: 'middle',
     marginRight: '4px',
+    flexShrink: 0,
   }
 
   return (
