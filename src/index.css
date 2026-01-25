@@ -100,6 +100,7 @@ li:hover {
 
 li .title {
   position: relative;
+  transition: all 0.3s ease;
 }
 
 li:hover .title {
@@ -108,11 +109,13 @@ li:hover .title {
 
 li .title .main {
   display: inline;
+  transition: all 0.3s ease;
 }
 
 li .title .desc {
   display: none;
   color: #a1a1aa;
+  transition: all 0.3s ease;
 }
 
 li:hover .title .main {
