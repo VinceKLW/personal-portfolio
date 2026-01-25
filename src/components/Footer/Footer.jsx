@@ -44,6 +44,19 @@ function Footer() {
       <p style={{ fontSize: '0.75rem', color: '#71717a' }}>
         2026 © VW
       </p>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '16px',
+        marginTop: '1rem',
+      }}>
+        <span style={{ color: '#71717a', fontSize: '16px', cursor: 'default' }}>←</span>
+        <a href="https://otu-webring.vercel.app" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', border: 'none' }}>
+          <img src="/ontariotech.svg" alt="OTU Webring" style={{ height: '20px', width: 'auto', opacity: 0.7 }} />
+        </a>
+        <span style={{ color: '#71717a', fontSize: '16px', cursor: 'default' }}>→</span>
+      </div>
     </footer>
   )
 }

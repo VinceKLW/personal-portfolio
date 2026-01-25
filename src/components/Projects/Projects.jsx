@@ -26,7 +26,7 @@ function Projects() {
   }
 
   return (
-    <section>
+    <section style={{ marginBottom: '0.5rem' }}>
       <h3>projects:</h3>
       <ul>
         {projects.map((project, index) => (
