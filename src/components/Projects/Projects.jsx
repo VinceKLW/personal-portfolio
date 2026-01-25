@@ -10,7 +10,7 @@ const projects = [
     name: 'volt!',
     description: 'ai-powered productivity automation tool',
     url: 'https://v0lt.ca',
-    hover: 'automate repetitive tasks with ai',
+    hover: 'enable talking to your documents',
     logo: '/volt_logo.jpeg'
   },
 ]
