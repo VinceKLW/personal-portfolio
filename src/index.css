@@ -1,28 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* index.css or App.css */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 24px 24px;
+  }
 }
-
-.fade-in {
-  animation: fadeIn 1s ease-in forwards;
-}
-
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #000;
+  color: #fafafa;
+  font-weight: 300;
+  line-height: 1.7;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+  animation: drift 20s linear infinite;
 }
 
 .portfolio {
-  margin: 2rem; /* adds margin around entire app */
-  max-width: 800px; /* optional: constrain max width */
-  margin-left: auto;
-  margin-right: auto; /* center horizontally */
-  box-sizing: border-box;
-  padding: 1rem; /* optional: internal spacing */
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #fafafa;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #a1a1aa;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #a1a1aa;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #d4d4d8;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+li:hover {
+  background-color: transparent;
+}
+
+li .title {
+  position: relative;
+}
+
+li:hover .title {
+  animation: glitchText 0.2s ease;
+}
+
+li .title .main {
+  display: inline;
+}
+
+li .title .desc {
+  display: none;
+  color: #a1a1aa;
+}
+
+li:hover .title .main {
+  display: none;
+}
+
+li:hover .title .desc {
+  display: inline;
+}
+
+@keyframes glitchText {
+  0% { opacity: 1; filter: blur(0); }
+  25% { opacity: 0.8; filter: blur(2px); transform: skewX(2deg); }
+  50% { opacity: 0.6; filter: blur(1px); transform: skewX(-2deg); }
+  75% { opacity: 0.8; filter: blur(2px); transform: skewX(1deg); }
+  100% { opacity: 1; filter: blur(0); transform: skewX(0); }
 }

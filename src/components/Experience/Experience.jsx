@@ -1,38 +1,59 @@
-import React from 'react'
-import './Experience.css'
-import fidelitylogo from '../../assets/fidelity_logo.jpeg'
-import oturacing from '../../assets/oturacing.jpeg'
-
-function ExperienceBox({ company, role, date, logo }) {
-    return (
-        <div className='experience-box'>
-            <img src={logo} className='experience-logo' alt={`${company} logo`} />
-            <div className='experience-container'>
-                <div className='experience-left'>
-                    <p className='experience-company'>{company}</p>
-                    <p className='experience-role'>{role}</p>
-                </div>
-                <p className='experience-date'>{date}</p>
-            </div>
-        </div>
-    )
-}
+const experiences = [
+  {
+    role: 'swe',
+    company: 'ontario tech racing',
+    date: '2025 - present',
+    logo: '/ontariotechracing.png',
+    description: 'web development & internal filing system',
+    url: null
+  },
+  {
+    role: 'it architect',
+    company: 'fidelity investments',
+    date: '2025',
+    logo: '/fidelity.webp',
+    description: 'design blueprints & developer portal',
+    url: 'https://www.fidelity.ca/en/'
+  },
+  {
+    role: 'data engineer',
+    company: 'fidelity investments',
+    date: '2025',
+    logo: '/fidelity.webp',
+    description: 'developed data pipelines & python scripts',
+    url: 'https://www.fidelity.ca/en/'
+  },
+]
 
 function Experience() {
-    const experienceData = [
-        { company: 'Ontario Tech Racing', role: 'Software Engineer - Software Department', date: 'Sept. 2025 - Present', logo: oturacing},
-        { company: 'Fidelity Investments', role: 'IT Architect - FCC IT Architecture', date: 'Jul. 2025 - Present', logo: fidelitylogo },
-        { company: 'Fidelity Investments', role: 'ML Engineer - FIC ML DevOps', date: 'Jan. 2025 - Jul. 2025', logo: fidelitylogo },
-    ]
+  const logoStyle = {
+    width: '16px',
+    height: '16px',
+    borderRadius: '3px',
+    marginRight: '6px',
+    verticalAlign: 'middle',
+  }
 
-    return (
-        <div className='experience-grouped'>
-            <h3 className='experience-title'>Work Experience</h3>
-            {experienceData.map((exp, index) => (
-                <ExperienceBox key={index} {...exp} />
-            ))}
-        </div>
-    )
+  return (
+    <section>
+      <h3>experience:</h3>
+      <ul>
+        {experiences.map((exp, index) => (
+          <li key={index} onClick={() => exp.url && window.open(exp.url, '_blank')}>
+            <div className="title" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.95rem' }}>
+              <img src={exp.logo} alt={exp.company} style={logoStyle} />
+              <span className="main">
+                {exp.role} <span style={{ color: '#71717a' }}>at</span>{' '}
+                <span style={{ fontWeight: 400 }}>{exp.company}</span>
+                <span style={{ color: '#71717a' }}> ({exp.date})</span>
+              </span>
+              <span className="desc">{exp.description}</span>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
 }
 
 export default Experience
