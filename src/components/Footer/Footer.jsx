@@ -42,7 +42,7 @@ function Footer() {
         </a>
       </div>
       <p style={{ fontSize: '0.75rem', color: '#71717a' }}>
-        2026 © vincent wong
+        2026 © VW
       </p>
     </footer>
   )
