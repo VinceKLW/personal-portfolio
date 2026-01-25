@@ -1,4 +1,9 @@
 function Footer() {
+  // Current site URL - used for webring navigation
+  const currentSite = typeof window !== 'undefined' ? window.location.origin : ''
+  const prevUrl = `https://otu-ring.com/prev.html?from=${encodeURIComponent(currentSite)}`
+  const nextUrl = `https://otu-ring.com/next.html?from=${encodeURIComponent(currentSite)}`
+
   const linkStyle = {
     display: 'inline-flex',
     alignItems: 'center',
@@ -6,6 +11,21 @@ function Footer() {
     borderRadius: '4px',
     border: 'none',
     transition: 'background-color 0.2s ease',
+  }
+
+  const navButtonStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#71717a',
+    fontSize: '16px',
+    textDecoration: 'none',
+    padding: '0.5rem',
+    borderRadius: '4px',
+    transition: 'all 0.2s ease',
+    border: 'none',
+    background: 'transparent',
+    cursor: 'pointer',
   }
 
   return (
@@ -51,11 +71,41 @@ function Footer() {
         gap: '16px',
         marginTop: '1rem',
       }}>
-        <span style={{ color: '#71717a', fontSize: '16px', cursor: 'default' }}>←</span>
-        <a href="https://otu-webring.vercel.app" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', border: 'none' }}>
-          <img src="/ontariotech.svg" alt="OTU Webring" style={{ height: '20px', width: 'auto', opacity: 0.7 }} />
+        <a
+          href={prevUrl}
+          style={navButtonStyle}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = '#fafafa'
+            e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#71717a'
+            e.currentTarget.style.backgroundColor = 'transparent'
+          }}
+          title="Previous site"
+        >
+          ←
         </a>
-        <span style={{ color: '#71717a', fontSize: '16px', cursor: 'default' }}>→</span>
+        
+        <a href="https://otu-ring.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', border: 'none' }}>
+          <img src="https://otu-ring.com/assets/ontariotech.svg" alt="OTU Webring" style={{ height: '20px', width: 'auto', opacity: 0.7, transition: 'opacity 0.2s ease' }} />
+        </a>
+
+        <a
+          href={nextUrl}
+          style={navButtonStyle}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = '#fafafa'
+            e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.1)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = '#71717a'
+            e.currentTarget.style.backgroundColor = 'transparent'
+          }}
+          title="Next site"
+        >
+          →
+        </a>
       </div>
     </footer>
   )
