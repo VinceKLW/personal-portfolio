@@ -1,14 +1,8 @@
 function Footer() {
   // Current site URL - used for webring navigation
-  // Strip www. prefix as webring expects domain without www
   const getCurrentSite = () => {
     if (typeof window === 'undefined') return ''
-    let hostname = window.location.hostname
-    // Remove www. prefix if present
-    if (hostname.startsWith('www.')) {
-      hostname = hostname.substring(4)
-    }
-    return hostname
+    return window.location.hostname
   }
   
   const currentSite = getCurrentSite()
