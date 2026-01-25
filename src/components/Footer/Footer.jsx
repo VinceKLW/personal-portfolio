@@ -1,6 +1,15 @@
 function Footer() {
   // Current site URL - used for webring navigation
-  const currentSite = typeof window !== 'undefined' ? window.location.origin : ''
+  // Try different formats - webring might expect just hostname or full URL
+  const getCurrentSite = () => {
+    if (typeof window === 'undefined') return ''
+    // Try hostname only (common webring format)
+    return window.location.hostname
+    // Alternative: return window.location.origin (with protocol)
+    // Alternative: return window.location.href (full URL with path)
+  }
+  
+  const currentSite = getCurrentSite()
   const prevUrl = `https://otu-ring.com/prev.html?from=${encodeURIComponent(currentSite)}`
   const nextUrl = `https://otu-ring.com/next.html?from=${encodeURIComponent(currentSite)}`
 
