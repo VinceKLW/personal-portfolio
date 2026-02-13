@@ -44,7 +44,7 @@ function Experience() {
             <div className="title" style={{ fontSize: '0.95rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }}>
               <img src={exp.logo} alt={exp.company} style={logoStyle} />
               <span className="main">
-                {exp.role} <span style={{ color: '#71717a' }}>at</span>{' '}
+                {exp.role} <span style={{ color: '#71717a' }}>@</span>{' '}
                 <span style={{ fontWeight: 400 }}>{exp.company}</span>
                 <span style={{ color: '#71717a' }}> ({exp.date})</span>
               </span>
