@@ -12,10 +12,10 @@ function Header() {
     <header style={{ marginBottom: '0.75rem' }}>
       <h1>vincent wong</h1>
       <h2 style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', flexWrap: 'wrap', marginTop: '0.5rem' }}>
-        cs @
+        CS @
         <a href="https://ontariotechu.ca" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', border: 'none', marginLeft: '6px' }}>
           <img src="/ontariotech.png" alt="Ontario Tech" style={logoStyle} />
-          otu
+          OTU
         </a>
       </h2>
     </header>

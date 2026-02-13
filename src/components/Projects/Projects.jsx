@@ -1,6 +1,6 @@
 const projects = [
   {
-    name: 'cutos',
+    name: 'CutOS',
     description: 'cursor for video editing',
     url: 'https://github.com/shamsharoon/CutOS',
     hover: 'ai-powered video editing made simple',

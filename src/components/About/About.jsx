@@ -3,7 +3,7 @@ function About() {
     <section>
       <h3>about:</h3>
       <p style={{ paddingLeft: '1rem' }}>
-        exploring ai and agents. pursuing software engineering.
+        Exploring AI and Agents. Pursuing Software Engineering.
       </p>
     </section>
   )

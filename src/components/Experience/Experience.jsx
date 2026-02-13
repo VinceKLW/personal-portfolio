@@ -1,23 +1,23 @@
 const experiences = [
   {
-    role: 'swe',
-    company: 'ontario tech racing',
-    date: 'present',
-    logo: '/ontariotechracing.png',
-    description: 'web development & internal filing system',
-    url: null
+    role: 'Software Engineer Intern',
+    company: 'Shopify',
+    date: 'Incoming S26',
+    logo: '/shopify.png',
+    description: 'building ai-powered tools for merchants',
+    url: 'https://www.shopify.com/'
   },
   {
-    role: 'it architect',
-    company: 'fidelity investments',
+    role: 'IT Architect Intern',
+    company: 'Fidelity Investments',
     date: 'S25',
     logo: '/fidelity.webp',
     description: 'design blueprints & developer portal',
     url: 'https://www.fidelity.ca/en/'
   },
   {
-    role: 'data engineer',
-    company: 'fidelity investments',
+    role: 'Data Engineer Intern',
+    company: 'Fidelity Investments',
     date: 'W25',
     logo: '/fidelity.webp',
     description: 'developed data pipelines & python scripts',
