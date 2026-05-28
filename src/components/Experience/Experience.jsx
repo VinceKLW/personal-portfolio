@@ -46,7 +46,16 @@ function Experience() {
               <span className="main">
                 {exp.role} <span style={{ color: '#71717a' }}>@</span>{' '}
                 <span style={{ fontWeight: 400 }}>{exp.company}</span>
-                <span style={{ color: '#71717a' }}> ({exp.date})</span>
+                <span style={{
+                  backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                  color: '#a78bfa',
+                  borderRadius: '3px',
+                  padding: '1px 6px',
+                  fontSize: '0.75rem',
+                  fontFamily: 'monospace',
+                  marginLeft: '6px',
+                  letterSpacing: '0.02em',
+                }}>{exp.date}</span>
               </span>
               <span className="desc">{exp.description}</span>
             </div>
