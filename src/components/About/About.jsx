@@ -1,8 +1,8 @@
 function About() {
   return (
     <section>
-      <h3>about:</h3>
-      <p style={{ paddingLeft: '1rem' }}>
+      <h3>// about</h3>
+      <p>
         Exploring AI and Agents. Pursuing Software Engineering.
       </p>
     </section>
