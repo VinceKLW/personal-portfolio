@@ -37,7 +37,7 @@ function Experience() {
 
   return (
     <section>
-      <h3>// experience</h3>
+      <h3>experience:</h3>
       <ul>
         {experiences.map((exp, index) => (
           <li key={index} onClick={() => exp.url && window.open(exp.url, '_blank')}>
@@ -47,15 +47,14 @@ function Experience() {
                 {exp.role} <span style={{ color: '#71717a' }}>@</span>{' '}
                 <span style={{ fontWeight: 400 }}>{exp.company}</span>
                 <span style={{
-                  backgroundColor: 'rgba(196, 240, 78, 0.08)',
-                  color: '#c4f04e',
-                  border: '1px solid rgba(196, 240, 78, 0.22)',
-                  borderRadius: '2px',
-                  padding: '0px 5px',
-                  fontSize: '0.65rem',
-                  fontFamily: "'JetBrains Mono', monospace",
-                  marginLeft: '7px',
-                  letterSpacing: '0.06em',
+                  backgroundColor: 'rgba(139, 92, 246, 0.15)',
+                  color: '#a78bfa',
+                  borderRadius: '3px',
+                  padding: '1px 6px',
+                  fontSize: '0.75rem',
+                  fontFamily: 'monospace',
+                  marginLeft: '6px',
+                  letterSpacing: '0.02em',
                 }}>{exp.date}</span>
               </span>
               <span className="desc">{exp.description}</span>

@@ -27,7 +27,7 @@ function Projects() {
 
   return (
     <section style={{ marginBottom: '0.5rem' }}>
-      <h3>// projects</h3>
+      <h3>projects:</h3>
       <ul>
         {projects.map((project, index) => (
           <li key={index} onClick={() => window.open(project.url, '_blank')}>
