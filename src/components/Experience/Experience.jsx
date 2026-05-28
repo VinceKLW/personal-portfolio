@@ -2,9 +2,9 @@ const experiences = [
   {
     role: 'Software Engineer Intern',
     company: 'Shopify',
-    date: 'Incoming S26',
+    date: 'S26',
     logo: '/shopify.png',
-    description: 'building ai-powered tools for merchants',
+    description: 'pricing & agentic payments',
     url: 'https://www.shopify.com/'
   },
   {
